@@ -31,7 +31,6 @@ class App extends Component {
     return filteredTasks.map((task) => {
       const currentUserId = this.props.currentUser && this.props.currentUser._id;
       const showPrivateButton = task.owner === currentUserId;
-
       return (
         <Task
           key={task._id}
