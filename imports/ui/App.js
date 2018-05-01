@@ -92,7 +92,7 @@ class App extends Component {
 }
 App.propTypes = {
   tasks: PropTypes.array,
-  incompleteCount: PropTypes.number,
+  incompleteCount: { chatId: PropTypes.String },
   currentUser: { username: PropTypes.string }
 };
 export default withTracker(() => {
