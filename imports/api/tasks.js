@@ -2,6 +2,7 @@ import { Meteor } from "meteor/meteor";
 import { Mongo } from "meteor/mongo";
 import { check } from "meteor/check";
 export const Tasks = new Mongo.Collection("tasks");
+export const Chat = new Mongo.Collection("chat");
 
 if (Meteor.isServer) {
   // This code only runs on the server
